@@ -1,3 +1,5 @@
+@import './theme.css';
+
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +19,3 @@ body {
     color: var(--text-default);
 }
 
-.container {
-    max-width: 98rem;
-    margin: 0 auto;
-}
-
-
-.content {
-    margin: 3.2rem;
-}
