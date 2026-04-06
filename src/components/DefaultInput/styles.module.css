@@ -1,0 +1,14 @@
+.labelTask {
+  font-size: 2rem;
+}
+
+.inputTask {
+  border: none;
+  border-bottom: 0.2rem solid var(--primary);
+  outline: none;
+  padding: 0.2rem 0;
+  color: var(--text-over-primary-dark);
+  background: transparent;
+  width: 30rem;
+  font-size: 2rem;
+}
