@@ -1,0 +1,31 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.3rem;
+}
+
+.formHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.buttonTask {
+  border-radius: 0.8rem;
+  width: 25rem;
+  height: 5.1rem;
+  background: var(--primary-dark);
+  border: 0.2rem solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonTask svg {
+  width: 3.4rem;
+  height: 3.4rem;
+}
