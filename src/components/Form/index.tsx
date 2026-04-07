@@ -10,11 +10,17 @@ export function Form() {
     setEvent(!event);
   }
 
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
+  console.log(event);
+
   return (
     <>
-      <form className={styles.formContainer} action="">
+      <form className={styles.formContainer} action="" onSubmit={handleSubmit}>
         <div className={styles.formHeading}>
-          <DefaultInput id="inputTask" type="text" />
+          <DefaultInput id="inputTask" type="text" labelText="Task" />
         </div>
 
         <div className="container">
@@ -27,7 +33,11 @@ export function Form() {
         </div>
 
         <div className="container">
-          <button className={styles.buttonTask} onClick={() => pause()}>
+          <button 
+          className={styles.buttonTask}
+          onClick={() => pause()}
+          type="submit"
+          >
             {event ? <CirclePauseIcon /> : <CirclePlayIcon />}
           </button>
         </div>
