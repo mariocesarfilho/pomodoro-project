@@ -4,6 +4,7 @@ type InputType = {
   type: "text" | "number";
   id: string;
   labelText: string;
+  placeholder?: string;
 };
 
 // Pegar os tipos do input
@@ -16,7 +17,7 @@ export function DefaultInput({ type, id, labelText }: InputType) {
       <label className={styles.labelTask} htmlFor={id}>
         { labelText }
       </label>
-      <input id={id} className={styles.inputTask} type={type} />
+      <input id={id} className={styles.inputTask} type={type}/>
     </>
   );
 }
