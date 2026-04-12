@@ -1,0 +1,30 @@
+.buttonPlay {
+  width: 22rem;
+  height: 5rem;
+  border-radius: 1rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform: all 0.1 ease-in-out;
+}
+
+.button svg {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.buttonPlay:hover {
+  filter: brightness(80%);
+}
+
+.green {
+  background-color: var(--primary);
+  color: var(--text-over-primary-light);
+}
+
+.red {
+  background-color: var(--error);
+  color: var(--text-over-primary-dark);
+}
