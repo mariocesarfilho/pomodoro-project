@@ -1,26 +1,17 @@
-import { CirclePauseIcon, CirclePlayIcon, PlayIcon } from "lucide-react";
+import { CirclePauseIcon, CirclePlayIcon } from "lucide-react";
 import styles from "./styles.module.css";
 import { useState } from "react";
 import { DefaultInput } from "../DefaultInput";
+import { Cycles } from "../Cycles";
+import { DefaultButton } from "../DefaultButton";
 
 export function Form() {
-  const [event, setEvent] = useState(false);
-
-  function pause() {
-    setEvent(!event);
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault();
-  }
-
-  console.log(event);
 
   return (
     <>
-      <form className={styles.formContainer} action="" onSubmit={handleSubmit}>
+      <form className={styles.formContainer} action="">
         <div className={styles.formHeading}>
-          <DefaultInput id="inputTask" type="text" labelText="Task" />
+          <DefaultInput id="inputTask" type="text" labelText="Task" placeholder="Digite Aqui!" />
         </div>
 
         <div className="container">
@@ -28,18 +19,11 @@ export function Form() {
         </div>
 
         <div className="container">
-          <p>Ciclos:</p>
-          <p>0 0 0 0 0 0 0 </p>
+          <Cycles />
         </div>
 
         <div className="container">
-          <button 
-          className={styles.buttonTask}
-          onClick={() => pause()}
-          type="submit"
-          >
-            {event ? <CirclePauseIcon /> : <CirclePlayIcon />}
-          </button>
+          <DefaultButton icon={<CirclePlayIcon />} />
         </div>
       </form>
     </>
