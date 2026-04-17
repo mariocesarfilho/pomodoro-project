@@ -17,16 +17,12 @@ export function DefaultInput({ type, id, labelText, placeholder }: InputType) {
       <label className={styles.labelTask} htmlFor={id}>
         {labelText}
       </label>
-<<<<<<< HEAD
-      <input id={id} className={styles.inputTask} type={type}/>
-=======
       <input
         id={id}
         className={styles.inputTask}
         type={type}
         placeholder={placeholder}
       />
->>>>>>> f89ab2b (update DefaultInput to include placeholder prop and adjust Form component to utilize it)
     </>
   );
 }

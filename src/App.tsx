@@ -5,6 +5,7 @@ import { Menu } from "./components/Menu";
 import "./styles/global.css";
 import { CountDown } from "./components/CountDown";
 import { Form } from "./components/Form";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
 
       <Container>
         <Form />
+      </Container>
+
+      <Container>
+        <Footer />
       </Container>
     </>
   );

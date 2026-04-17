@@ -13,8 +13,6 @@
   align-items: center;
   gap: 1.3rem;
 }
-<<<<<<< HEAD
-=======
 
 .buttonTask {
   border-radius: 0.8rem;
@@ -39,4 +37,3 @@
 .buttonPause {
   background: var(--error);
 }
->>>>>>> f89ab2b (update DefaultInput to include placeholder prop and adjust Form component to utilize it)

@@ -1,4 +1,4 @@
-.buttonPlay {
+.button {
   width: 22rem;
   height: 5rem;
   border-radius: 1rem;
@@ -8,6 +8,7 @@
   justify-content: center;
   cursor: pointer;
   transform: all 0.1 ease-in-out;
+  min-width: 22rem;
 }
 
 .button svg {
@@ -15,7 +16,7 @@
   height: 3.2rem;
 }
 
-.buttonPlay:hover {
+.button:hover {
   filter: brightness(80%);
 }
 
