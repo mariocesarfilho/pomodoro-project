@@ -6,12 +6,16 @@ import { Cycles } from "../Cycles";
 import { DefaultButton } from "../DefaultButton";
 
 export function Form() {
-
   return (
     <>
       <form className={styles.formContainer} action="">
         <div className={styles.formHeading}>
-          <DefaultInput id="inputTask" type="text" labelText="Task" placeholder="Digite Aqui!" />
+          <DefaultInput
+            id="inputTask"
+            type="text"
+            labelText="Task"
+            placeholder="Digite Aqui!"
+          />
         </div>
 
         <div className="container">

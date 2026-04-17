@@ -11,13 +11,22 @@ type InputType = {
 // type InputType = {} & React.ComponentProps<'input'>;
 // Dessa forma eu consigo pegar todos os tipos que um input permite
 
-export function DefaultInput({ type, id, labelText }: InputType) {
+export function DefaultInput({ type, id, labelText, placeholder }: InputType) {
   return (
     <>
       <label className={styles.labelTask} htmlFor={id}>
-        { labelText }
+        {labelText}
       </label>
+<<<<<<< HEAD
       <input id={id} className={styles.inputTask} type={type}/>
+=======
+      <input
+        id={id}
+        className={styles.inputTask}
+        type={type}
+        placeholder={placeholder}
+      />
+>>>>>>> f89ab2b (update DefaultInput to include placeholder prop and adjust Form component to utilize it)
     </>
   );
 }
